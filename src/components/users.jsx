@@ -8,7 +8,31 @@ const iconStyle = {
     color:'gray'
   };
 
-function Users({users}) {
+  
+  const users = [
+    {
+      userName: 'midudev',
+      name: 'Miguel Ángel Durán',
+      isFollowing: true
+    },
+    {
+      userName: 'pheralb',
+      name: 'Pablo H.',
+      isFollowing: false
+    },
+    {
+      userName: 'PacoHdezs',
+      name: 'Paco Hdez',
+      isFollowing: true
+    },
+    {
+      userName: 'TMChein',
+      name: 'Tomas',
+      isFollowing: false
+    }
+  ]
+
+function Users() {
 
 
     return (
@@ -25,6 +49,8 @@ function Users({users}) {
         </>
       );
     }
+
+    Users({users})
 
 
 export default Users;
